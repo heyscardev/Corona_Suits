@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="768.0" prefWidth="1116.0" styleClass="fon_consul" stylesheets="@AHNCSS.css" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistema_hotel1.ConsultaController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="tablaClientes" prefHeight="287.0" prefWidth="350.0" GridPane.rowIndex="1">
+        <columns>
+          <TableColumn id="primerafilatabla" fx:id="columnaClienteID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="columnaClienteNombre" prefWidth="75.0" text="NOMBRE" />
+            <TableColumn fx:id="columnaClienteApellido" prefWidth="75.0" text="APELLIDO" />
+            <TableColumn fx:id="columnaClienteCedula" prefWidth="75.0" text="CEDULA" />
+            <TableColumn fx:id="columnaClienteSexo" prefWidth="75.0" text="SEXO" />
+            <TableColumn fx:id="columnaClienteFNacimiento" prefWidth="75.0" text="F. NACIMIENTO" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <GridPane alignment="BOTTOM_RIGHT" maxHeight="50.0" prefHeight="50.0" prefWidth="1002.0" GridPane.rowIndex="2">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="botonRegistrar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" styleClass="but_regis2" stylesheets="@AHNCSS.css" text="REGISTRAR" />
+            <Button fx:id="botonModificar" mnemonicParsing="false" styleClass="but_mod2" stylesheets="@AHNCSS.css" text="MODIFICAR" GridPane.columnIndex="1" />
+            <Button fx:id="botonEliminar" mnemonicParsing="false" styleClass="but_eli2" stylesheets="@AHNCSS.css" text="ELIMINAR" GridPane.columnIndex="2" />
+         </children>
+         <GridPane.margin>
+            <Insets left="100.0" right="50.0" />
+         </GridPane.margin>
+      </GridPane>
+      <HBox>
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/bus.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="labelBusqueda" promptText=" buscar en cualquier campo" styleClass="texfiel_bus2" stylesheets="@AHNCSS.css">
+               <tooltip>
+                  <Tooltip text="V-XXXXXXX para cedula venezolana&#10;E-XXXXXXX para cedula extrangera&#10;xxxxxxxxx para codigo reservacion&#10;xxxxxxxxx para nombre o apellido" />
+               </tooltip></TextField>
+         </children>
+      </HBox>
+   </children>
+</GridPane>

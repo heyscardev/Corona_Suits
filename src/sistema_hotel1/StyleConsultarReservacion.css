@@ -1,0 +1,16 @@
+
+.table-view{
+ -fx-background-color: linear-gradient(to top ,rgba(246,248,252,0.4) 0%,rgba(162,254,252,0.4) 100%);
+}
+.table-view .label{
+    
+    -fx-font-size:18px;
+    -fx-border-radius: 10px;
+    -fx-background-radius:10px;
+}
+.table-view .column-header{
+    -fx-background-color: linear-gradient(to top ,rgba(246,248,252,1) 0%,rgba(162,254,252,1) 100%);
+}
+.scroll-pane-background{
+    -fx-background-color: transparent; 
+}

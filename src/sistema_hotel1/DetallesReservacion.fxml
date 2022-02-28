@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox styleClass="fondoDetalles" stylesheets="@AHNCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistema_hotel1.DetallesReservacionController">
+   <children>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="titulo1" text="DETALLES DE RESERVACIONES" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </HBox>
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox maxWidth="350.0" spacing="10.0">
+                     <children>
+                        <Label styleClass="titulo2" text="INFORMACION DEL CLIENTE" />
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="Cedula Cliente" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="textoCedula" disable="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="Nombre Cliente" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="textoNombre" disable="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="Apellido Cliente" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="textoApellido" disable="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="Fecha de Nacimiento" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="fechaNacimiento" disable="true" prefHeight="25.0" prefWidth="149.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="120.0">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="Sexo Cliente" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="textoSexo" disable="true" />
+                           </children>
+                        </HBox>
+                        <Label styleClass="titulo2" text="INFORMACION DE LA RESERVACION" />
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="Codigo Reservacion" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="textoCodigo" disable="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="Fecha de Llegada" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="fechaLLegada" disable="true" prefHeight="25.0" prefWidth="149.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label maxWidth="1.7976931348623157E308" text="Fecha de Salida" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="fechaSalida" disable="true" prefHeight="25.0" prefWidth="149.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" />
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button fx:id="btnEliminar" mnemonicParsing="false" text="ELIMINAR RESERVACION" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <VBox id="fondoFactura" fx:id="vboxFactura" maxWidth="300.0" minHeight="0.0" minWidth="300.0" prefHeight="200.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </HBox.margin>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </VBox>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

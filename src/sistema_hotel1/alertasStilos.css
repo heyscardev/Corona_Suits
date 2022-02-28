@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : abr 5, 2021, 6:14:35 p.m.
+    Author     : heyscar
+*/
+*{
+    -fx-font-family:"PoetsenOne-Regular.ttf";; 
+
+}
+
+ .dialog-pane{
+  -fx-effect: innershadow( three-pass-box,transparent , 10.0, 0.0, 0.0, 0.0);
+
+     -fx-background-color: rgba(0,0,0,0.6);
+     -fx-font-size: 24px;
+-fx-pref-width:600px;
+-fx-pref-height:300px;
+    -fx-background-radius: 20px;
+ }
+
+
+.dialog-pane > .button-bar > .container {
+  -fx-background-color: transparent;
+  -fx-padding:5px;
+}
+
+.dialog-pane > .content.label {
+    -fx-border-insets:0 50px 0 30px;
+     -fx-background-insets: 0 80px 0 20px;
+   -fx-padding: 5px 50px 0px 30px;
+   -fx-background-color:linear-gradient(to top,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);
+-fx-background-radius: 10px;
+   -fx-text-fill:rgba(255,255,255,0.95);
+   -fx-font-size:24.0px;
+   -fx-font-weight: bold;
+}
+
+/**Costumization of DialogPane Header**/
+.dialog-pane:header .header-panel {
+  -fx-background-color:transparent;
+}
+
+.dialog-pane:header .header-panel .label{
+    -fx-padding: 0px 0 0 0 ;
+  -fx-background-color: rgba(255,255,255,6);
+  /*-fx-border-color:rgba(8,137,157,1);*/
+  -fx-border-radius: 10px;
+  -fx-background-radius:10px;
+  -fx-text-fill:rgba(8,137,157,1);
+  -fx-font-size:40.0px;
+  
+}
+
+
+/**Costumization of Buttons**/
+.dialog-pane .button{
+    -fx-background-insets:5px;
+    -fx-border-insets:5px;
+    -fx-padding:5px;
+    -fx-font-size:22px;
+   -fx-background-color:rgba(8,137,157,0.7);
+   -fx-text-fill:white;
+   -fx-wrap-text: true;
+   -fx-effect: dropshadow( three-pass-box,rgba(8,137,157,1) , 10.0, 0.0, 0.0, 0.0);
+   -fx-cursor:hand;
+   -fx-padding:0px;
+   -fx-pref-width:6em;
+ }
+
+.dialog-pane .button:hover{     
+
+    -fx-background-color:rgba(8,137,157,0.7),rgba(0,0,0,0.2);
+  -fx-text-fill:black;
+  
+ }
