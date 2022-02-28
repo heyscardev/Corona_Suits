@@ -1,0 +1,682 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-mar-2021, 19:43:34
+    Author     : Marlene
+*/
+/*  -gradiente pisina: linear-gradient(rgba(54,174,200,1) 23%,rgba(21,152,172) 65%,rgba(8,137,157,1) 93%);
+gradienteluz: linear-gradient(to top left,rgba(246,248,252,1) 0%,rgba(162,254,252,1) 53%,rgba(203,254,253,1) 83%,rgba(162,254,252,1) 100%);*/
+.root{
+    -fx-verde1: rgba(53,192,202,1);
+
+   -fx-colorpisina:linear-gradient(to top,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);;
+  
+}
+*{
+    -fx-font-family:"PoetsenOne-Regular.ttf";
+    -fx-text-fill: #ffffff;
+}
+.fondo{
+   -fx-background-image:  url("images/fon2.jpg");
+   -fx-background-size:stretch;
+   -fx-background-repeat: no-repeat;
+   -fx-background-position:top;
+}
+.letrascalendario{
+    -fx-font-size:18px; 
+}
+.botoncalendario, .botoncerrarsesion{
+     -fx-background-color: linear-gradient(to top right,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);
+  -fx-border-color: rgba(4,188,184,1);
+  -fx-border-width: 1px;
+  -fx-text-fill: white;
+  -fx-background-radius: 20px;
+  -fx-border-radius: 20px;
+  -fx-font-size:30px;
+  -fx-alignment: TOP_CENTER;
+  -fx-font-family:arial;
+  -fx-padding: 0.1em;
+   -fx-font-weight: bold;
+}
+#gridcalendario .botoncalendario{
+ 
+  -fx-pref-width:2.3em;  
+  -fx-pref-height:2.3em;
+  
+}.botoncalendario:disabled{
+    -fx-background-color: linear-gradient(to top,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);
+}
+
+.botoncalendario:hover{
+    -fx-background-color:linear-gradient(to top right,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%),rgba(255,255,255,0.5);
+  -fx-border-color: rgba(4,188,184,1);
+  -fx-border-width: 1px;
+  -fx-text-fill: rgba(103, 108, 121, 1);
+  -fx-background-radius: 20px;
+  -fx-border-radius: 20px;
+
+ 
+
+ -fx-padding: 0px;
+  -fx-font-weight: bold;
+}
+.botoncerrarsesion{
+  -fx-background-color:rgba(255,255,255,1);
+  -fx-text-fill: rgba(54,174,200,1);
+   -fx-font-size :19px;
+     -fx-pref-width:10em; 
+}
+.botoncerrarsesion:hover{
+  -fx-background-color:rgba(54,174,200,1);
+  -fx-text-fill: rgba(255,255,255,1); 
+}
+
+.combo-box-base {
+    
+    -fx-font-size :19px;
+    -fx-padding:0em;
+    -fx-border-color: transparent;
+}
+
+.combo-box .list-cell 
+{
+  
+    -fx-text-fill: white;
+   
+}
+
+.combo-box-popup .list-view .list-cell 
+{
+    -fx-background-color: rgba(54,174,200,1);
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover 
+{
+   -fx-background-color: linear-gradient(to top right,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%),rgba(255,255,255,0.5);
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover 
+{
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-inner-color;
+}
+.combo-box-base:hover
+{
+    -fx-color: -fx-hover-base;
+    -fx-border-color: transparent;
+}
+.combo-box-base:showing 
+{
+    -fx-color:  rgba(54,174,200,1);
+}
+
+.combo-box-base:focused {
+    /*-fx-background-color: red, blue, violet, green; cambiar valores principales*/
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+}
+.stackbarra{
+    -fx-padding: 10px;
+}
+
+
+/*--------------barraLateral-----------------------*/
+
+.barralateral{
+    -fx-background-color:#34c4ca;
+}
+.boton_barra_lateral{
+    -fx-background-color: rgba(255,255,255,0.10);
+    -fx-font-family:"PoetsenOne-Regular";
+    -fx-font-size:18px;
+  
+   
+}
+.boton_barra_lateral:hover{
+ -fx-background-color: rgba(255,255,255,0.8);
+}
+.barralateral #botoncliente{
+ 
+}
+.titulo_principal{
+      -fx-font-family:"PoetsenOne-Regular";
+    -fx-font-size:30px;
+    
+    
+}
+/*-----------------------consultar Reservacion,  consulta------------------------------*/
+
+.table-view{
+ -fx-background-color: linear-gradient(to top,rgba(54,174,200,0.1) 23%,rgba(21,152,172,0.5) 65%,rgba(8,137,157,1) 93%);;/* linear-gradient(to top ,rgba(246,248,252,0.4) 0%,rgba(53,192,202,0.4) 100%);*/
+}
+.table-view .label{
+    -fx-text-fill:rgba(255,255,255,0.9);
+    -fx-font-size:12px;
+    -fx-border-radius: 10px;
+    -fx-background-radius:10px;
+}
+.table-view .label:hover{
+    -fx-text-fill:gray;
+}
+
+.scroll-pane-background, .table-view .column-header-background{
+    -fx-background-color: transparent; 
+}
+
+.table-view .column-header, .table-view .filler {
+     -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+.table-row-cell{
+     -fx-background-color: rgba(54,174,200,1);
+}
+.table-row-cell:odd {
+    -fx-background-color: rgba(8,137,157,1);
+} 
+.table-row-cell:selected{
+     -fx-background-color: rgba(8,137,120,1);
+}
+.table-{
+    -fx-background-color:red;
+}
+
+.fon_consul{
+    -fx-background-color: #34c4ca;
+}
+.texfiel_bus, .texfiel_bus2{
+    -fx-background-color: transparent;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 5px;
+}
+.but_regis, .but_mod, .but_eli, .but_regis2, .but_mod2, .but_eli2{
+    -fx-padding: 10px;
+    -fx-background-radius: 30px;
+}
+.but_regis, .but_regis2{
+   -fx-background-color: #58c66f 
+}
+.but_mod, .but_mod2{
+    -fx-background-color: #ffdb45;
+}
+.but_eli, .but_eli2{
+    -fx-background-color: #ff6161;
+}
+/*-----------------------registrar_reservacion----------------------*/
+.fon_regis_reserv{
+    -fx-background-image:  url("images/fon3.jpg");
+}
+.gridrr1, .gridrr2, .gridrr3, .gridrr4{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.titurr1, .titurr2{
+    -fx-font-size: 18px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0 0 2 0;
+}
+.tf_cd, .tf_cd, .tf_a{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 5px;
+}
+.butrr_consul{
+   -fx-padding: 10px;
+   -fx-background-radius: 30px;
+   -fx-background-color: #58c66f;
+}
+.labelrr_hs{
+   -fx-font-size: 18px;
+   -fx-border-color: #ffffff;
+   -fx-border-width: 0 0 2 0;
+}
+.combrr{
+   -fx-background-color: transparent;
+   -fx-border-color: white;
+   -fx-border-width: 0 0 2 0;
+   -fx-padding: 0;  
+ -fx-font-size:12px;
+ -fx-pref-width:133px;
+}
+.butrr_guar, .butrr_lim{
+   -fx-padding: 10px;
+   -fx-background-radius: 30px;
+}
+.butrr_guar{
+   -fx-background-color: #58c66f; 
+}
+.butrr_lim{
+   -fx-background-color: #ffdb45; 
+}
+.h{
+    -fx-font-size:16px;
+    
+}
+/*-----------------------registro_cliente----------------------*/
+.font_rc{
+    -fx-background-image: url("images/fon7.jpg");
+    -fx-font-size: 15px;
+}
+.titu_rc{
+    -fx-font-size: 30px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0 0 2 0;
+}
+.tf_rc{
+   -fx-background-color: transparent;
+   -fx-border-color: white;
+   -fx-border-width: 0 0 2 0;
+   -fx-padding: 5px;
+}
+.gridrc_1, .gridrc_2, .gridrc_3{
+    -fx-font-weight: bold;
+}
+/*-----------------------interfaz_cliente----------------------*/
+.vbic_barra{
+    -fx-background-color: #34c4ca;
+    -fx-font-size: 20px;
+}
+.fon_ic{
+    -fx-background-color: #34c4ca;
+}
+.titulo_ic{
+    -fx-font-size: 15px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0 0 2 0;
+}
+.but_guar_client, .but_cancel_client{
+   -fx-padding: 10px;
+   -fx-background-radius: 30px; 
+}
+.but_guar_client{
+  -fx-background-color: #58c66f;  
+}
+.but_cancel_client{
+    -fx-background-color: #ff6161;
+}
+#botonTotal{
+    -fx-font-size:60px;
+}
+/*-----formato spinners---------------*/
+.spinner .increment-arrow-button:hover{
+     -fx-body-color: #ff6161;
+     
+}
+
+.spinner .text-field{
+    -fx-text-fill: white;
+    -fx-background-color:rgba(54,174,200,1); 
+}
+.spinner .decrement-arrow-button:hover {
+    -fx-body-color: #58c66f;
+  
+}
+.spinner .decrement-arrow-button,.spinner .increment-arrow-button {
+    
+    -fx-body-color:rgba(54,174,200,1);
+    -fx-border-color: white ;
+    -fx-border-radius: 2px;
+}
+.spinner .increment-arrow-button .increment-arrow{
+    -fx-background-color: white;
+    -fx-shape: "M6.293,10.879a1,1,0,0,0,1.414,0L11,7.587,11.007,18a1,1,0,0,0,2,0L13,7.586l3.293,3.293a1,1,0,1,0,1.414-1.414L14.122,5.879a3,3,0,0,0-4.243,0L6.293,9.465A1,1,0,0,0,6.293,10.879Z";
+    -fx-scale-y: 1.55;
+}
+.spinner .decrement-arrow-button .decrement-arrow{
+    -fx-background-color: white;
+    -fx-shape: "M17.707,13.121a1,1,0,0,0-1.414,0L13,16.413,12.993,6a1,1,0,0,0-2,0L11,16.414,7.707,13.121a1,1,0,1,0-1.414,1.414l3.585,3.586a3,3,0,0,0,4.243,0l3.586-3.586A1,1,0,0,0,17.707,13.121Z";
+    -fx-scale-y: 1.5;
+    
+}
+/*-----------------------interfaz_servicios----------------------*/
+.fon_s{
+    -fx-background-color: #34c4ca;
+    -fx-font-size: 15px;
+}
+.label_s{
+    -fx-font-weight: bold;
+}
+.titulo_s{
+    -fx-font-size: 20px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0 0 2 0;
+}
+.but_lim, .but_pedir{
+    -fx-padding: 10px;
+   -fx-background-radius: 30px;
+}
+.but_lim{
+    -fx-background-color: #ffdb45;
+}
+.but_pedir{
+    -fx-background-color: #58c66f;
+}
+/*-----------------------interfaz_habitaciones----------------------*/
+.fon_habitaciones{
+    -fx-background-color: #34c4ca;
+}
+.titu_habitaciones{
+    -fx-font-size: 20px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0 0 2 0;
+}
+.but_habitaciones{
+    -fx-padding: 10px;
+   -fx-background-radius: 30px;
+}
+.but_regis_habit{
+    -fx-background-color: #E170FF;
+}
+.but_eli_habit{
+    -fx-background-color: #ff6161;
+}
+.but_mod_habit{
+    -fx-background-color: #ffdb45;
+}
+.but_guar_habit{
+    -fx-background-color: #58c66f;
+}
+#primerafilatabla .row-cell{
+    -fx-background-color:#58c66f;
+}#primerafilatabla .row-cell:odd{
+    -fx-background-color:#ff6161;
+}
+.date-picker > .text-field {
+     -fx-background-color: linear-gradient(to top right,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);
+  
+    -fx-background-insets: 1 0 1 1;
+    -fx-background-radius: 2 0 0 2;
+    
+}
+
+.date-picker:focused > .text-field,
+.date-picker > .text-field:focused {
+   -fx-background-color: #34c4ca;
+   -fx-background-insets: 1 0 1 1, 1 0 1 1, 3 2 3 3;
+    -fx-background-radius: 2 0 0 2, 1 0 0 1, 0;
+}
+.date-picker-popup {
+    -fx-padding: 1;
+  -fx-background-color: transparent;
+}
+
+.date-picker-popup > .month-year-pane {
+    -fx-padding: 4;
+    -fx-background-color: rgba(0,0,0,0.5);
+}
+
+.date-picker-popup > .month-year-pane > .spinner {
+    -fx-spacing: 4;
+    -fx-alignment: CENTER;
+    -fx-fill-height: false;
+    -fx-background-color: linear-gradient(to top right,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);
+  ;
+}
+
+.date-picker-popup > .month-year-pane > .spinner > .spinner-label {
+    -fx-font-size: 1.083333em;
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+  
+}
+     
+
+.date-picker-popup > .month-year-pane > .spinner > .left-button {
+ 
+    -fx-background-color: #58c66f;
+}
+
+.date-picker-popup > .month-year-pane > .spinner > .right-button {
+  
+    -fx-background-color: #58c66f;
+}
+.date-picker-popup > .month-year-pane > .spinner > .left-button:hover {
+ 
+    -fx-background-color: #ff6161;
+}
+
+.date-picker-popup > .month-year-pane > .spinner > .right-button:hover {
+  
+    -fx-background-color: #ff6161;
+}
+
+.date-picker-popup > .month-year-pane > .spinner > .button > .left-arrow {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-padding: 0.333em 0.167em 0.333em 0.167em;
+    -fx-shape: "M5.997,5.072L5.995,6.501l-2.998-4l2.998-4l0.002,1.43l-1.976,2.57L5.997,5.072z";
+    -fx-scale-shape: true;
+}
+
+.date-picker-popup > .month-year-pane > .spinner > .button > .right-arrow {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-padding: 0.333em 0.167em 0.333em 0.167em;
+    -fx-shape: "M2.998-0.07L3-1.499l2.998,4L3,6.501l-0.002-1.43l1.976-2.57L2.998-0.07z";
+    -fx-scale-shape: true;
+}
+
+.date-picker-popup > * {
+    -fx-background-color:transparent;
+    -fx-alignment: BASELINE_CENTER;
+    
+}
+.date-picker-popup > *> .cell  {
+    -fx-background-color:rgba(0,0,0,0.3);
+    -fx-alignment: BASELINE_CENTER;
+    
+}
+
+
+.date-picker-popup > * > .cell:disabled > * {
+    /* This is set on the cell's children so the border is not affected. */
+    -fx-opacity: 0.4;
+    
+}
+
+.date-picker-popup > * > .week-number-header-cell,
+.date-picker-popup > * > .day-name-cell {
+    -fx-font-size: 0.833333em;
+    -fx-padding: 0;
+    -fx-text-fill: rgba(54,174,200,1);
+    -fx-font-weight: bold;
+    }
+
+.date-picker-popup > * > .week-number-cell {
+    -fx-font-size: 0.75em;
+    -fx-padding: 0;
+}
+
+.date-picker-popup > * > .day-cell {
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+    -fx-border-insets: 0;
+}
+
+.date-picker-popup > * > .hijrah-day-cell {
+    -fx-alignment: TOP_LEFT;
+    -fx-cell-size: 2.75em;
+}
+
+.date-picker-popup > * > .day-cell:focused {
+    -fx-background-color: #CCE8FF;
+}
+
+.date-picker-popup > * > .day-cell:hover {
+    -fx-background-color: #58c66f;;
+}
+
+.date-picker-popup > * > .day-cell > .secondary-text {
+    -fx-font-size: 1.0em;
+    -fx-fill: red;
+}
+
+.date-picker-popup > * > .today {
+    -fx-background-insets: 1;
+    -fx-border-color:#58c66f;
+   
+    
+    -fx-border-insets: 1;
+}
+
+.date-picker-popup > * > .today:focused {
+    -fx-background-color:linear-gradient(to top right,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);
+  ;
+    
+}
+
+.date-picker-popup > * > .selected {
+    -fx-background-color: #CCE8FF;
+}
+
+.date-picker-popup > * > .previous-month,
+.date-picker-popup > * > .next-month {
+    -fx-text-fill: #aaaaaa;
+}
+
+.date-picker-popup > * > .previous-month > .secondary-text,
+.date-picker-popup > * > .next-month > .secondary-text {
+    -fx-fill: #aaaaaa;
+}
+.tab-pane .tab{
+    -fx-background-color: linear-gradient(to top right,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);
+  ;
+}
+.tab-pane .tab:hover{
+    -fx-background-color: linear-gradient(to top right,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%)
+  ,rgba(255,255,255,0.3);
+}
+.tab-pane>*.tab-header-area>*.tab-header-background{
+    -fx-background-color: white;
+  
+}
+
+.gridFondo {
+    -fx-background-color: white;
+}
+
+.label_factura{
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+}
+
+.label_plus{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+.label_max{
+   -fx-font-size: 20px;
+   -fx-text-fill: black;
+   -fx-border-color: black;
+   -fx-border-width: 0 0 2 0;
+}
+.fondo_componente_reservacion{
+-fx-border-color: white;
+    -fx-background-position:  center;
+    -fx-background-color:linear-gradient(to top,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);;
+  
+     /*-fx-background-image: url("images/fon7.jpg");*/
+ 
+}
+.fondo_componente_reservacion .label{
+    -fx-font-size:14px
+}
+#id_principal{
+    -fx-font-size:36px;
+    -fx-text-fill:  linear-gradient(to top,rgba(255,255,255,1) 23%,rgba(21,152,172,1) 65%,rgba(255,255,255,1) 93%);
+}
+.fondo_componente_reservacion .button{
+   -fx-background-color: linear-gradient(to top,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);
+    -fx-font-weight:bold;-fx-font-size: 18px;
+    -fx-background-radius:20px;
+}
+.fondo_componente_reservacion .button:hover{
+   -fx-background-color: linear-gradient(to top,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%),rgba(0,0,0,0.5);
+    
+}
+.fondo_componente_reservacion:hover {
+   -fx-scale-y: 1.01;
+    -fx-scale-x:1.01 ;
+}
+#panelsplit .viewport{
+    -fx-background-color:transparent;
+}
+.fondoDetalles{
+    -fx-background-color: linear-gradient(to top,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);;
+    
+}
+.fondoDetalles .label{
+    -fx-text-fill: white;
+    -fx-font-size:16px;
+}
+.fondoDetalles .titulo1{
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+ .fondoDetalles .titulo2{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+.fondoDetalles #fondoFactura{
+    -fx-background-color:  white;
+    -fx-background-radius: 10px;
+    
+}
+.fondoDetalles #supertitulo{
+     -fx-font-size: 60px;
+    -fx-font-weight: bold;
+}
+.fondoDetalles #factura .label{
+    -fx-text-fill:black;
+    -fx-font-size: 12px;
+}
+.fondoDetalles .button{
+    -fx-background-color: white;
+    -fx-border-color:rgba(21,152,177,1);
+    -fx-text-fill:linear-gradient(to top,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);;
+    -fx-font-size: 16px;
+    -fx-font-weight:bold;
+}
+.fondoDetalles .button:hover{
+    -fx-background-color:rgba(255,255,255,0.5); 
+    -fx-border-color:rgba(255,255,255,0.5);
+   -fx-text-fill:linear-gradient(to top,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);;
+   -fx-font-size: 18px;
+   
+}
+.fondoDetalles .button:pressed{
+    -fx-background-color:rgba(0,0,0,0.5); 
+    -fx-border-color:rgba(255,255,255,0.5);
+   -fx-text-fill:linear-gradient(to top,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);;
+   -fx-font-size: 18px;
+   
+}
+
+.fondoDetalles .text-field{
+    -fx-font-size:12;
+    -fx-text-fill: linear-gradient(to top,rgba(54,174,200,1) 23%,rgba(21,152,172,1) 65%,rgba(8,137,157,1) 93%);;
+ 
+}
+.fondoDetalles .date-picker .text-field{
+    -fx-font-size: 12;
+    -fx-text-fill: white;
+}

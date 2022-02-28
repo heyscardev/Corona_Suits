@@ -1,0 +1,51 @@
+@font-face{
+    font-family: "RussoOne-Regular";
+    src: url("RussoOne-Regular.ttf");
+}
+.btn_inicio{
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-background-radius: 20px;
+}
+.titulo_1{
+    -fx-font-family: "RussoOne-Regular";
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 40px;
+}   
+.vbox_1 {
+     -fx-background-color: #34c4ca;
+}
+.img_inicio{
+    -fx-background-image: url('img_inicio_1.jpg');
+}
+.textfield_1{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 15px;
+}
+.label{
+    -fx-font-family: "RussoOne-Regular";
+    -fx-text-fill: #ffffff;
+}
+.label_titu{
+    -fx-font-family: "RussoOne-Regular";
+    -fx-font-size: 40px;
+}
+
+.circulo{
+     -fx-background-color: #34c4ca;
+    -fx-background-radius: 120%;
+  
+    -fx-border-color: transparent;
+ 
+    -fx-border-width: 4px 4.8px 5px 4.8px; 
+}
+
+.ancho{
+      -fx-background-color: white;
+      -fx-background-radius: 120%;
+}
+.efecto{
+    -fx-background-color: rgba(54,174,200,0.2);
+}

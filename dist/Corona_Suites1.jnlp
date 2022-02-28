@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Corona_Suites1.jnlp">
+  <information>
+    <title>Corona_Suites1</title>
+    <vendor>pc</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Corona_Suites1.jar" size="3839017" download="eager" />
+    <jar href="lib\AbsoluteLayout.jar" size="2850" download="eager" />
+    <jar href="lib\AnimateFX.jar" size="123579" download="eager" />
+    <jar href="lib\commons-beanutils-1.9.4.jar" size="246918" download="eager" />
+    <jar href="lib\commons-codec-1.10.jar" size="284184" download="eager" />
+    <jar href="lib\commons-collections4-4.1.jar" size="751238" download="eager" />
+    <jar href="lib\commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\groovy-all-2.4.5.jar" size="6997394" download="eager" />
+    <jar href="lib\itext-pdfa-5.5.4.jar" size="62412" download="eager" />
+    <jar href="lib\itextpdf-5.5.4.jar" size="2148384" download="eager" />
+    <jar href="lib\jasperreports-6.11.0.jar" size="5673471" download="eager" />
+    <jar href="lib\jfreechart-1.0.12.jar" size="1368681" download="eager" />
+    <jar href="lib\junit-4.12.jar" size="314932" download="eager" />
+    <jar href="lib\log4j-1.2.17.jar" size="489884" download="eager" />
+    <jar href="lib\mariadb-java-client-2.4.2.jar" size="587708" download="eager" />
+    <jar href="lib\poi-3.16.jar" size="2679259" download="eager" />
+    <jar href="lib\poi-excelant-3.16.jar" size="31218" download="eager" />
+    <jar href="lib\poi-ooxml-3.16.jar" size="1433719" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.16.jar" size="5871746" download="eager" />
+    <jar href="lib\poi-scratchpad-3.16.jar" size="1384931" download="eager" />
+    <jar href="lib\xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Corona_Suites1" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="sistema_hotel1.Sistema_hotel1"  name="Corona_Suites1" />
+  <update check="always"/>
+</jnlp>

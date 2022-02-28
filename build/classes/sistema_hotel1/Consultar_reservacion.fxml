@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="768.0" prefWidth="1116.0" styleClass="fon_consul" stylesheets="@AHNCSS.css" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistema_hotel1.Consultar_reservacionController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TableView fx:id="TablaReservaciones" prefHeight="287.0" prefWidth="350.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <columns>
+            <TableColumn fx:id="columnaCodigoReservacion" prefWidth="75.0" text="CODIGO DE RESERVACION" />
+            <TableColumn fx:id="columnaNombreUsuario" prefWidth="75.0" text="NOMBRE DE CLIENTE" />
+            <TableColumn fx:id="columnaCedulaCliente" prefWidth="75.0" text="CEDULA DE CLIENTE" />
+            <TableColumn fx:id="columnaFechaEntrada" prefWidth="75.0" text="F.  ENTRADA" />
+            <TableColumn fx:id="columnaFechaSalida" prefWidth="75.0" text="F. SALIDA" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <GridPane alignment="BOTTOM_RIGHT" maxHeight="50.0" prefHeight="140.0" prefWidth="350.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btnRegistrar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" styleClass="but_regis" stylesheets="@AHNCSS.css" text="REGISTRAR" />
+            <Button fx:id="btnModificar" mnemonicParsing="false" styleClass="but_mod" stylesheets="@AHNCSS.css" text="MODIFICAR" GridPane.columnIndex="1" />
+            <Button fx:id="btnEliminar" mnemonicParsing="false" styleClass="but_eli" stylesheets="@AHNCSS.css" text="ELIMINAR" GridPane.columnIndex="2" />
+            <Button fx:id="btnVerDetalles" mnemonicParsing="false" style="-fx-background-color: white; -fx-text-fill: black;" styleClass="but_eli" stylesheets="@AHNCSS.css" text="DETALLES" GridPane.columnIndex="3" />
+         </children>
+         <GridPane.margin>
+            <Insets left="100.0" right="50.0" />
+         </GridPane.margin>
+      </GridPane>
+      <HBox alignment="CENTER_LEFT" stylesheets="@AHNCSS.css" GridPane.columnIndex="1">
+         <children>
+            <GridPane HBox.hgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="25.0" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="33.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/bus.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="Buscar" promptText="BUSCAR" styleClass="texfiel_bus" stylesheets="@AHNCSS.css" GridPane.columnIndex="1" />
+                  <Label fx:id="Alerta" text="Alerta" visible="false" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets top="10.0" />
+         </GridPane.margin>
+      </HBox>
+   </children>
+</GridPane>
